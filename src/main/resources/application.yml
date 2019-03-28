@@ -5,7 +5,10 @@ spring:
         binder:
           brokers: localhost:9092
       bindings:
-        sumant-input:
+        sumant-input1:
+          destination: ssr-input
+          contentType: application/json
+        sumant-input2:
           destination: ssr-input
           contentType: application/json
         sumant-output:
